@@ -1,30 +1,48 @@
 const assert = require('assert')
 const { add } = require('./index')
 
-console.log("First Test")
+describe('The ADD function tests', function() {
 
-    const actual = add(5, 6)
-    const expectation = 11
+    it('Should return 11 for arguments 5 and 6', function(){
+
+        const actual = add(5, 6)
+
+    const expectation = 12
+
 
     assert.equal(actual, expectation)
 
-    console.log("successfully ran all tests")
+    })
 
+    it('Should throw and error if arguments are not passed in', function(){
 
-console.log("End of first test")
+        assert.throws(() => {
 
+            add()
+        
+        })
 
-
-console.log("Second Test: Test that add function throws and error if no arguments are passed")
-
-assert.throw(() => {
-
-    add()
+    })
 
 })
 
-console.log("successfully ran all tests")
+// console.log("First Test")
 
 
-console.log("End of second test")
+
+//     console.log("successfully ran all tests")
+
+
+// console.log("End of first test")
+
+
+
+// console.log("Second Test: Test that add function throws and error if no arguments are passed")
+
+
+
+// console.log("successfully ran all tests")
+
+
+// console.log("End of second test")
 
