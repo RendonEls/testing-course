@@ -1,5 +1,5 @@
 const assert = require('assert')
-const { add } = require('./index')
+const { add } = require('./../index')
 
 describe('The ADD function tests', function() {
 
@@ -15,18 +15,3 @@ describe('The ADD function tests', function() {
         })
     })
 })
-
-
-
-// console.log("First Test")
-
-//     console.log("successfully ran all tests")
-
-// console.log("End of first test")
-
-// console.log("Second Test: Test that add function throws and error if no arguments are passed")
-
-// console.log("successfully ran all tests")
-
-// console.log("End of second test")
-
