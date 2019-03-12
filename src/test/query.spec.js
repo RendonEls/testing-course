@@ -29,5 +29,14 @@ describe('The query function', function(){
             const expectation = 'by=kati-frantz&popular=true&category=nodejs'
             assert.deepEqual(actual, expectation)
         })
+
+        it('eliminate all undefined and null values', () => {
+            const queryObject = {
+                by: 'kati-frantz',
+                popular: undefined,
+                unanswered: null
+            }
+            assert.equal(stringify(queryObject), 'by=kati-frantz')
+        })
     })
 })
